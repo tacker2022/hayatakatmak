@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Manrope } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/layout/navbar";
@@ -41,6 +42,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <AudioPlayer />
+        <Analytics />
       </body>
     </html>
   );
