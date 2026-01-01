@@ -18,7 +18,33 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: "Hayata Katmak | Atıktan Değere Yolculuk",
-  description: "Kullanılmış eşyaları ve elektronik atıkları değere dönüştüren sürdürülebilir bir girişim.",
+  description: "Kullanılmış eşyaları ve elektronik atıkları değere dönüştüren sürdürülebilir bir girişim. Hurdadan mücevhere uzanan bu dönüşüm hikayesine ortak olun.",
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
+  },
+  openGraph: {
+    title: "Hayata Katmak | Atıktan Değere",
+    description: "Kullanılmış eşyaları ve elektronik atıkları değere dönüştüren sürdürülebilir bir girişim.",
+    url: "https://hayatakatmak.vercel.app", // Fallback URL, actually dynamic but good to have base
+    siteName: "Hayata Katmak",
+    images: [
+      {
+        url: "/hero-infographic.jpg", // Using the rich infographic as the preview
+        width: 1200,
+        height: 630,
+        alt: "Hayata Katmak Proje Döngüsü",
+      },
+    ],
+    locale: "tr_TR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hayata Katmak | Atıktan Değere",
+    description: "Kullanılmış eşyaları ve elektronik atıkları değere dönüştüren sürdürülebilir girişim.",
+    images: ["/hero-infographic.jpg"],
+  },
 };
 
 export default function RootLayout({
