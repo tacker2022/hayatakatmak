@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -22,9 +23,14 @@ export function Navbar() {
             <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2">
-                    <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
-                        <span className="text-white font-bold text-lg">H</span>
-                    </div>
+                    <Image
+                        src="/icon.png"
+                        alt="Hayata Katmak Logo"
+                        width={32}
+                        height={32}
+                        className="h-8 w-8 object-contain"
+                    />
+
                     <span className="text-xl font-bold tracking-tight text-primary font-display">
                         Hayata Katmak
                     </span>

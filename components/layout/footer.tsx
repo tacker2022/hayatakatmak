@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
 
 export function Footer() {
@@ -9,9 +10,13 @@ export function Footer() {
                     {/* Brand Column */}
                     <div className="space-y-4">
                         <Link href="/" className="flex items-center gap-2">
-                            <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
-                                <span className="text-white font-bold text-lg">H</span>
-                            </div>
+                            <Image
+                                src="/icon.png"
+                                alt="Hayata Katmak Logo"
+                                width={32}
+                                height={32}
+                                className="h-8 w-8 object-contain"
+                            />
                             <span className="text-xl font-bold tracking-tight text-primary font-display">
                                 Hayata Katmak
                             </span>
