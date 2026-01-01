@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { AudioPlayer } from "@/components/ui/audio-player";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -71,6 +72,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <AudioPlayer />
+        <Analytics />
       </body>
       <GoogleAnalytics gaId="G-BYHSVN5RVZ" />
     </html>
