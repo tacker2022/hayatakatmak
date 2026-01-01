@@ -91,12 +91,12 @@ export function ImpactCalculator() {
                                     </div>
                                     <div className="flex items-center gap-3 bg-white rounded-lg p-1 border shadow-sm">
                                         <button
-                                            onClick={() => updateCount(item.id as any, -1)}
+                                            onClick={() => updateCount(item.id as keyof typeof counts, -1)}
                                             className="w-8 h-8 flex items-center justify-center rounded-md hover:bg-muted transition-colors font-bold text-muted-foreground"
                                         >-</button>
-                                        <span className="w-6 text-center font-bold text-foreground">{counts[item.id as any]}</span>
+                                        <span className="w-6 text-center font-bold text-foreground">{counts[item.id as keyof typeof counts]}</span>
                                         <button
-                                            onClick={() => updateCount(item.id as any, 1)}
+                                            onClick={() => updateCount(item.id as keyof typeof counts, 1)}
                                             className="w-8 h-8 flex items-center justify-center rounded-md bg-accent/10 text-accent hover:bg-accent/20 transition-colors font-bold"
                                         >+</button>
                                     </div>
